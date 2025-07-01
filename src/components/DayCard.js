@@ -80,7 +80,26 @@ const DayCard = ({
   }
 
   return (
-    <div className={getCardClasses()} onClick={hasEvents ? onClick : undefined}>
+    <div
+      className={getCardClasses()}
+      onClick={hasEvents ? onClick : undefined}
+      // Use relative sizing for responsiveness and fixed aspect ratio
+      style={{
+        aspectRatio: "1 / 1",
+        width: "100%",
+        maxWidth: "100%",
+        flex: "1 1 0",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "stretch",
+        ...(
+          typeof getCardClasses() === "object" && getCardClasses().style
+            ? getCardClasses().style
+            : {}
+        ),
+      }}
+    >
       <div className={getDayClasses()}>{day}</div>
 
       {/* Multi-day events (spanning events) */}
