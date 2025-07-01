@@ -1,0 +1,139 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "2024-01-15",
+      "endDate": "2024-01-15",
+      "title": "Spring Semester Begins",
+      "description": "First day of classes for Spring 2024 semester. All students should check their course schedules and classroom locations.",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "date": "2024-01-22",
+      "endDate": "2024-01-22",
+      "title": "Add/Drop Deadline",
+      "description": "Last day to add or drop courses without penalty. Students must finalize their course schedules by 11:59 PM.",
+      "type": "deadline",
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "date": "2024-01-26",
+      "endDate": "2024-01-26",
+      "title": "Republic Day",
+      "description": "National Holiday - Republic Day of India",
+      "type": "national_holiday",
+      "color": "orange"
+    },
+    {
+      "id": 4,
+      "date": "2024-02-14",
+      "endDate": "2024-02-14",
+      "title": "Research Symposium",
+      "description": "Annual undergraduate research symposium. Students will present their research projects and findings.",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 5,
+      "date": "2024-03-08",
+      "endDate": "2024-03-08",
+      "title": "Holi",
+      "description": "National Holiday - Festival of Colors",
+      "type": "national_holiday",
+      "color": "orange"
+    },
+    {
+      "id": 6,
+      "date": "2024-03-11",
+      "endDate": "2024-03-18",
+      "title": "Spring Break",
+      "description": "Spring break week. Classes resume March 18th.",
+      "type": "vacation",
+      "color": "green"
+    },
+    {
+      "id": 7,
+      "date": "2024-04-15",
+      "endDate": "2024-04-15",
+      "title": "Registration Opens",
+      "description": "Fall 2024 course registration opens for all students. Priority registration for seniors begins at 8:00 AM.",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 8,
+      "date": "2024-04-22",
+      "endDate": "2024-04-24",
+      "title": "Academic Conference",
+      "description": "Annual Academic Excellence Conference featuring keynote speakers and student presentations.",
+      "type": "conference",
+      "color": "purple"
+    },
+    {
+      "id": 9,
+      "date": "2024-05-06",
+      "endDate": "2024-05-10",
+      "title": "Final Exams",
+      "description": "Final examination period. Check your exam schedule for specific times and locations.",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 10,
+      "date": "2024-05-15",
+      "endDate": "2024-05-15",
+      "title": "Commencement Ceremony",
+      "description": "Spring 2024 graduation ceremony. Ceremony begins at 10:00 AM in the main auditorium.",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 11,
+      "date": "2024-06-03",
+      "endDate": "2024-06-03",
+      "title": "Summer Session Begins",
+      "description": "First summer session begins. Intensive courses and workshops available.",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 12,
+      "date": "2024-08-15",
+      "endDate": "2024-08-15",
+      "title": "Independence Day",
+      "description": "National Holiday - Independence Day of India",
+      "type": "national_holiday",
+      "color": "orange"
+    },
+    {
+      "id": 13,
+      "date": "2024-08-26",
+      "endDate": "2024-08-26",
+      "title": "Fall Semester Begins",
+      "description": "First day of classes for Fall 2024 semester. Welcome back students!",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 14,
+      "date": "2024-10-02",
+      "endDate": "2024-10-02",
+      "title": "Gandhi Jayanti",
+      "description": "National Holiday - Birth anniversary of Mahatma Gandhi",
+      "type": "national_holiday",
+      "color": "orange"
+    },
+    {
+      "id": 15,
+      "date": "2024-12-20",
+      "endDate": "2024-12-31",
+      "title": "Winter Break",
+      "description": "Winter break period. Classes resume in January.",
+      "type": "vacation",
+      "color": "green"
+    }
+  ]
+}

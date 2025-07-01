@@ -1,18 +1,26 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Calendar } from "@/components/calendar"
+import Calendar from "./components/Calendar"
+import Sidebar from "./components/Sidebar"
+import EventModal from "./components/EventModal"
+import "./App.css"
 
-interface Event {
-  date: string
-  title: string
-  description?: string
-}
-
-export default function AcademicCalendarApp() {
-  const [events, setEvents] = useState<Event[]>([])
+function App() {
+  const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const [error, setError] = useState(null)
+  const [currentDate, setCurrentDate] = useState(new Date())
+  const [selectedEvent, setSelectedEvent] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedCalendars, setSelectedCalendars] = useState({
+    academic: true,
+    vacation: true,
+    exam: true,
+    national_holiday: true,
+    deadline: true,
+    conference: true,
+  })
 
   useEffect(() => {
     const loadEvents = async () => {
@@ -33,6 +41,18 @@ export default function AcademicCalendarApp() {
 
     loadEvents()
   }, [])
+
+  const handleCalendarToggle = (calendarId) => {
+    setSelectedCalendars((prev) => ({
+      ...prev,
+      [calendarId]: !prev[calendarId],
+    }))
+  }
+
+  const handleEventClick = (event) => {
+    setSelectedEvent(event)
+    setIsModalOpen(true)
+  }
 
   if (loading) {
     return (
@@ -62,8 +82,19 @@ export default function AcademicCalendarApp() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-4 sm:py-8 px-4">
-      <Calendar events={events} />
+    <div className="h-screen flex bg-gray-50">
+      <Sidebar
+        currentDate={currentDate}
+        onDateChange={setCurrentDate}
+        events={events}
+        onEventClick={handleEventClick}
+        selectedCalendars={selectedCalendars}
+        onCalendarToggle={handleCalendarToggle}
+      />
+      <Calendar events={events} selectedCalendars={selectedCalendars} />
+      <EventModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} event={selectedEvent} />
     </div>
   )
 }
+
+export default App

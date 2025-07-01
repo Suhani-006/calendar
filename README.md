@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Academic Calendar App
+
+A responsive React.js web application for displaying and managing academic calendar events.
+
+## Features
+
+- Monthly calendar grid view
+- Event loading from JSON file
+- Interactive event details modal
+- Responsive design for all devices
+- Academic-focused styling and events
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 14 or higher)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone or download this project
+2. Navigate to the project directory
+3. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+\`\`\`bash
+npm install
+\`\`\`
 
-## Learn More
+### Running the Application
 
-To learn more about Next.js, take a look at the following resources:
+\`\`\`bash
+npm start
+\`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application will open in your browser at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Building for Production
 
-## Deploy on Vercel
+\`\`\`bash
+npm run build
+\`\`\`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This creates a `build` folder with optimized production files.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+\`\`\`
+myapp/
+├── public/
+│   ├── events.json          # Event data file
+│   ├── index.html          # Main HTML template
+│   └── manifest.json       # PWA manifest
+├── src/
+│   ├── components/
+│   │   ├── Calendar.js     # Main calendar component
+│   │   ├── DayCard.js      # Individual day component
+│   │   └── EventModal.js   # Event details modal
+│   ├── App.js              # Main app component
+│   ├── App.css             # App-specific styles
+│   ├── index.js            # React entry point
+│   └── index.css           # Global styles
+└── package.json            # Project dependencies
+\`\`\`
+
+## Customization
+
+### Adding Events
+
+Edit the `public/events.json` file to add your own events:
+
+\`\`\`json
+{
+  "events": [
+    {
+      "date": "2024-01-15",
+      "title": "Your Event Title",
+      "description": "Optional event description"
+    }
+  ]
+}
+\`\`\`
+
+### Styling
+
+The app uses Tailwind CSS via CDN. You can customize colors and styling by modifying the Tailwind config in `public/index.html` or by editing the component CSS classes.
+
+## Browser Support
+
+This app supports all modern browsers including:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+This project is open source and available under the MIT License.
