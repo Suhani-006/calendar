@@ -1,3 +1,10 @@
+//basically we are going to change this data because its not that much accurate
+//aslo styling needs to be changed
+//I want to add national holiday calender also in this app so accordingly events.json file will be created
+//also want to add time table also in the app but it will be done after this calender will done
+//colouring will be changed
+
+
 # Academic Calendar App
 
 A responsive React.js web application for displaying and managing academic calendar events.
