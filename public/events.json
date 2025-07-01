@@ -2,138 +2,300 @@
   "events": [
     {
       "id": 1,
-      "date": "2024-01-15",
-      "endDate": "2024-01-15",
-      "title": "Spring Semester Begins",
-      "description": "First day of classes for Spring 2024 semester. All students should check their course schedules and classroom locations.",
+      "date": "2025-06-09",
+      "endDate": "2025-06-09",
+      "title": "Notification for Remission of tuition fee",
+      "description": "Notification for Remission of tuition fee",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 2,
-      "date": "2024-01-22",
-      "endDate": "2024-01-22",
-      "title": "Add/Drop Deadline",
-      "description": "Last day to add or drop courses without penalty. Students must finalize their course schedules by 11:59 PM.",
-      "type": "deadline",
-      "color": "red"
+      "date": "2025-07-23",
+      "endDate": "2025-07-23",
+      "title": "Registration program for existing B.Tech., M.Tech., M.Sc., MS (Research) and Ph.D. students (signing the roll list and collection of Grade Sheets)",
+      "description": "Registration program for existing B.Tech., M.Tech., M.Sc., MS (Research) and Ph.D. students (signing the roll list and collection of Grade Sheets)",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 3,
-      "date": "2024-01-26",
-      "endDate": "2024-01-26",
-      "title": "Republic Day",
-      "description": "National Holiday - Republic Day of India",
-      "type": "national_holiday",
-      "color": "orange"
+      "date": "2025-07-24",
+      "endDate": "2025-07-24",
+      "title": "Orientation program for New M.Tech., M.Sc., MS (Research), MA and Ph.D. students",
+      "description": "Orientation program for New M.Tech., M.Sc., MS (Research), MA and Ph.D. students",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 4,
-      "date": "2024-02-14",
-      "endDate": "2024-02-14",
-      "title": "Research Symposium",
-      "description": "Annual undergraduate research symposium. Students will present their research projects and findings.",
+      "date": "2025-07-25",
+      "endDate": "2025-07-25",
+      "title": "Orientation program for New B.Tech. and B.Des. students",
+      "description": "Orientation program for New B.Tech. and B.Des. students",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 5,
-      "date": "2024-03-08",
-      "endDate": "2024-03-08",
-      "title": "Holi",
-      "description": "National Holiday - Festival of Colors",
-      "type": "national_holiday",
-      "color": "orange"
+      "date": "2025-08-03",
+      "endDate": "2025-08-03",
+      "title": "Life Skill Development Program for New B.Tech. and B. Des. students Jul. 26 -",
+      "description": "Life Skill Development Program for New B.Tech. and B. Des. students Jul. 26 -",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 6,
-      "date": "2024-03-11",
-      "endDate": "2024-03-18",
-      "title": "Spring Break",
-      "description": "Spring break week. Classes resume March 18th.",
-      "type": "vacation",
-      "color": "green"
+      "date": "2025-07-28",
+      "endDate": "2025-07-28",
+      "title": "Commencement of classes (except for 2025 B.Tech. and B.Des. batch)",
+      "description": "Commencement of classes (except for 2025 B.Tech. and B.Des. batch)",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 7,
-      "date": "2024-04-15",
-      "endDate": "2024-04-15",
-      "title": "Registration Opens",
-      "description": "Fall 2024 course registration opens for all students. Priority registration for seniors begins at 8:00 AM.",
+      "date": "2025-08-01",
+      "endDate": "2025-08-01",
+      "title": "Online course adjustment [i.e. dropping registered course(s)and/or adding new course(s)] (except for 2025 B.Tech. and B.Des. batch)",
+      "description": "Online course adjustment [i.e. dropping registered course(s)and/or adding new course(s)] (except for 2025 B.Tech. and B.Des. batch)",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 8,
-      "date": "2024-04-22",
-      "endDate": "2024-04-24",
-      "title": "Academic Conference",
-      "description": "Annual Academic Excellence Conference featuring keynote speakers and student presentations.",
-      "type": "conference",
-      "color": "purple"
+      "date": "2025-08-04",
+      "endDate": "2025-08-04",
+      "title": "Commencement of classes for 2025 B.Tech. and B.Des. batch",
+      "description": "Commencement of classes for 2025 B.Tech. and B.Des. batch",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 9,
-      "date": "2024-05-06",
-      "endDate": "2024-05-10",
-      "title": "Final Exams",
-      "description": "Final examination period. Check your exam schedule for specific times and locations.",
-      "type": "exam",
-      "color": "red"
+      "date": "2025-08-08",
+      "endDate": "2025-08-08",
+      "title": "Online course adjustment [i.e. dropping registered course(s)and/or adding new course(s)] (only for 2025 B.Tech. batch)",
+      "description": "Online course adjustment [i.e. dropping registered course(s)and/or adding new course(s)] (only for 2025 B.Tech. batch)",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 10,
-      "date": "2024-05-15",
-      "endDate": "2024-05-15",
-      "title": "Commencement Ceremony",
-      "description": "Spring 2024 graduation ceremony. Ceremony begins at 10:00 AM in the main auditorium.",
+      "date": "2025-08-11",
+      "endDate": "2025-08-11",
+      "title": "Notification for Remission of Tuition fee (only for 2025 B.Tech. and B.Des. batch)",
+      "description": "Notification for Remission of Tuition fee (only for 2025 B.Tech. and B.Des. batch)",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 11,
-      "date": "2024-06-03",
-      "endDate": "2024-06-03",
-      "title": "Summer Session Begins",
-      "description": "First summer session begins. Intensive courses and workshops available.",
+      "date": "2025-08-25",
+      "endDate": "2025-08-25",
+      "title": "Last date for online application to select Thesis Supervisor(s), Topic of MS (Research) Thesis and MA Dissertation by concerned students",
+      "description": "Last date for online application to select Thesis Supervisor(s), Topic of MS (Research) Thesis and MA Dissertation by concerned students",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 12,
-      "date": "2024-08-15",
-      "endDate": "2024-08-15",
-      "title": "Independence Day",
-      "description": "National Holiday - Independence Day of India",
-      "type": "national_holiday",
-      "color": "orange"
+      "date": "2025-08-25",
+      "endDate": "2025-08-25",
+      "title": "PSPC Constitution for Ph.D. students",
+      "description": "PSPC Constitution for Ph.D. students",
+      "type": "academic",
+      "color": "blue"
     },
     {
       "id": 13,
-      "date": "2024-08-26",
-      "endDate": "2024-08-26",
-      "title": "Fall Semester Begins",
-      "description": "First day of classes for Fall 2024 semester. Welcome back students!",
+      "date": "2025-09-17",
+      "endDate": "2025-09-17",
+      "title": "Last day of Teaching for Before Mid Semester Courses",
+      "description": "Last day of Teaching for Before Mid Semester Courses",
       "type": "academic",
       "color": "blue"
     },
     {
       "id": 14,
-      "date": "2024-10-02",
-      "endDate": "2024-10-02",
-      "title": "Gandhi Jayanti",
-      "description": "National Holiday - Birth anniversary of Mahatma Gandhi",
-      "type": "national_holiday",
-      "color": "orange"
+      "date": "2025-09-26",
+      "endDate": "2025-09-26",
+      "title": "Last date for Mid Semester Evaluation of B.Tech. Project, M.Tech., M.Sc. and MS (Research) Thesis, MA Dissertation- Stage 1",
+      "description": "Last date for Mid Semester Evaluation of B.Tech. Project, M.Tech., M.Sc. and MS (Research) Thesis, MA Dissertation- Stage 1",
+      "type": "exam",
+      "color": "red"
     },
     {
       "id": 15,
-      "date": "2024-12-20",
-      "endDate": "2024-12-31",
-      "title": "Winter Break",
-      "description": "Winter break period. Classes resume in January.",
+      "date": "2025-09-29",
+      "endDate": "2025-09-29",
+      "title": "Classes resume after Mid Semester Examination (MSE)",
+      "description": "Classes resume after Mid Semester Examination (MSE)",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 16,
+      "date": "2025-10-06",
+      "endDate": "2025-10-06",
+      "title": "Classes resume after Mid Semester Break",
+      "description": "Classes resume after Mid Semester Break",
       "type": "vacation",
       "color": "green"
+    },
+    {
+      "id": 17,
+      "date": "2025-10-10",
+      "endDate": "2025-10-10",
+      "title": "Last date for showing evaluated answer sheets of the Mid Semester Examination",
+      "description": "Last date for showing evaluated answer sheets of the Mid Semester Examination",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 18,
+      "date": "2025-11-13",
+      "endDate": "2025-11-13",
+      "title": "Last day of conducting any Quiz as the part of In-Semester Evaluation",
+      "description": "Last day of conducting any Quiz as the part of In-Semester Evaluation",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 19,
+      "date": "2025-11-21",
+      "endDate": "2025-11-21",
+      "title": "Last day of Teaching",
+      "description": "Last day of Teaching",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 20,
+      "date": "2025-11-21",
+      "endDate": "2025-11-21",
+      "title": "Last date for submission of report for relevant programs",
+      "description": "Last date for submission of report for relevant programs",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 21,
+      "date": "2025-12-01",
+      "endDate": "2025-12-01",
+      "title": "End Semester Examination (ESE) Nov. 24 -",
+      "description": "End Semester Examination (ESE) Nov. 24 -",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 22,
+      "date": "2025-12-01",
+      "endDate": "2025-12-01",
+      "title": "Last date for request for re-examination (for unforeseen medical emergency of student only)",
+      "description": "Last date for request for re-examination (for unforeseen medical emergency of student only)",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 23,
+      "date": "2025-12-05",
+      "endDate": "2025-12-05",
+      "title": "Last date for showing evaluated answer sheets of the End Semester Examination",
+      "description": "Last date for showing evaluated answer sheets of the End Semester Examination",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 24,
+      "date": "2025-12-05",
+      "endDate": "2025-12-05",
+      "title": "Last date for submission of the online Grades",
+      "description": "Last date for submission of the online Grades",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 25,
+      "date": "2025-12-05",
+      "endDate": "2025-12-05",
+      "title": "Last date for submission of the Grades for relevant program",
+      "description": "Last date for submission of the Grades for relevant program",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 26,
+      "date": "2025-12-06",
+      "endDate": "2026-01-04",
+      "title": "3rd year), B.Des. and M.Sc. (1st semester) students only]",
+      "description": "3rd year), B.Des. and M.Sc. (1st semester) students only]",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 27,
+      "date": "2025-12-10",
+      "endDate": "2025-12-10",
+      "title": "Last date for Academic performance evaluation by the SUGC and SPGC",
+      "description": "Last date for Academic performance evaluation by the SUGC and SPGC",
+      "type": "exam",
+      "color": "red"
+    },
+    {
+      "id": 28,
+      "date": "2025-12-11",
+      "endDate": "2025-12-11",
+      "title": "Online release of the Grades",
+      "description": "Online release of the Grades",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 29,
+      "date": "2025-12-16",
+      "endDate": "2025-12-16",
+      "title": "Last date to apply for Re-totaling of marks",
+      "description": "Last date to apply for Re-totaling of marks",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 30,
+      "date": "2025-12-22",
+      "endDate": "2025-12-22",
+      "title": "Last date for submission of the Grades of Re-totaling",
+      "description": "Last date for submission of the Grades of Re-totaling",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 31,
+      "date": "2026-01-02",
+      "endDate": "2026-01-02",
+      "title": "Online release of the teaching feedback",
+      "description": "Online release of the teaching feedback",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 32,
+      "date": "2026-01-30",
+      "endDate": "2026-01-30",
+      "title": "Last date for conducting CERP",
+      "description": "Last date for conducting CERP",
+      "type": "academic",
+      "color": "blue"
+    },
+    {
+      "id": 33,
+      "date": "2026-02-02",
+      "endDate": "2026-02-02",
+      "title": "Last date for submission of the Grade for Ph.D. thesis (XX 899)",
+      "description": "Last date for submission of the Grade for Ph.D. thesis (XX 899)",
+      "type": "academic",
+      "color": "blue"
     }
   ]
 }
