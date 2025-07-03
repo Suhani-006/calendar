@@ -36,6 +36,7 @@ function App() {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [events, setEvents] = useState([]);
   const today = new Date();
+  // Move year/month state here so Sidebar can use it
   const [year, setYear] = useState(2025);
   const [month, setMonth] = useState(6); // July 2025 (0-indexed)
 
@@ -68,9 +69,32 @@ function App() {
     setMonth(today.getMonth());
   };
 
+  // Add handler for sidebar month change
+  const handleSidebarMonthChange = (delta) => {
+    setMonth(m => {
+      let newMonth = m + delta;
+      if (newMonth < 0) {
+        setYear(y => y - 1);
+        return 11;
+      }
+      if (newMonth > 11) {
+        setYear(y => y + 1);
+        return 0;
+      }
+      return newMonth;
+    });
+  };
+
   return (
     <div className="calendar-app">
-      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <Sidebar
+        open={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        month={month}
+        year={year}
+        onMonthChange={handleSidebarMonthChange}
+        events={events}
+      />
       <div className="main">
         <TopBar onMenuClick={() => setSidebarOpen(true)} />
         <HeaderBar
