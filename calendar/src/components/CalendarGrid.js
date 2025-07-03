@@ -25,7 +25,8 @@ export default function CalendarGrid({ year, month, events, onDayClick }) {
   const days = getMonthDays(year, month);
 
   function getEventForDay(day) {
-    const dateStr = `${year}-07-${String(day).padStart(2, '0')}`;
+    const monthStr = String(month + 1).padStart(2, '0');
+    const dateStr = `${year}-${monthStr}-${String(day).padStart(2, '0')}`;
     return events.filter(e => e.date === dateStr);
   }
 
@@ -41,6 +42,7 @@ export default function CalendarGrid({ year, month, events, onDayClick }) {
               className={`calendar-cell${day === 3 ? ' selected' : ''}${j === 5 ? ' sat' : ''}${j === 6 ? ' sun' : ''}`}
               key={j}
               onClick={() => day && onDayClick(getEventForDay(day)[0] || null)}
+              style={{display: 'flex', flexDirection: 'column', minHeight: 80, height: '100%'}}
             >
               {day ? <span className="cell-day">{day}</span> : ''}
               <div className="cell-events">
@@ -48,22 +50,43 @@ export default function CalendarGrid({ year, month, events, onDayClick }) {
                   <div className="event-dot" key={ev.title} style={{background:'#1976d2'}} title={ev.title}></div>
                 ))}
               </div>
+              {/* Show event title(s) for this day */}
+              <div
+                className="cell-event-titles"
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '2px',
+                  marginTop: '2px',
+                  maxHeight: '38px',
+                  overflowY: 'auto'
+                }}
+              >
+                {getEventForDay(day).map(ev => (
+                  <div
+                    key={ev.title}
+                    style={{
+                      fontSize: '0.8em',
+                      color: '#1976d2',
+                      fontWeight: 'bold',
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      background: '#e3f2fd',
+                      borderRadius: '4px',
+                      padding: '0 2px'
+                    }}
+                    title={ev.title}
+                  >
+                    {ev.title}
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
       ))}
-      <div className="calendar-events-bar">
-        {events.map(ev => (
-          <div
-            key={ev.title}
-            className="event-bar"
-            style={{left: `${(new Date(ev.date).getDay() + 6) % 7 * 14.28}%`, background: '#1976d2'}}
-            onClick={() => onDayClick(ev)}
-          >
-            {ev.title}
-          </div>
-        ))}
-      </div>
+      
     </div>
   );
 }

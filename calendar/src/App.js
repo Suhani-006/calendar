@@ -5,12 +5,23 @@ import CalendarGrid from './components/CalendarGrid';
 import EventModal from './components/EventModal';
 import eventsData from './events.json';
 
+// Only show TopBar on mobile/tablet
+function TopBar({ onMenuClick }) {
+  return (
+    <div className="top-bar mobile-only">
+      <button className="menu-btn" onClick={onMenuClick}>&#9776;</button>
+      <span className="top-bar-title">Calendar</span>
+    </div>
+  );
+}
+
 function HeaderBar({ year, month, onPrev, onNext, onToday }) {
   const monthNames = [
     'January','February','March','April','May','June','July','August','September','October','November','December'
   ];
   return (
     <div className="main-header">
+      {/* Remove menu button from here */}
       <button className="today-btn" onClick={onToday}>Today</button>
       <button className="nav-btn" onClick={onPrev}>&lt;</button>
       <button className="nav-btn" onClick={onNext}>&gt;</button>
@@ -61,6 +72,7 @@ function App() {
     <div className="calendar-app">
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <div className="main">
+        <TopBar onMenuClick={() => setSidebarOpen(true)} />
         <HeaderBar
           year={year}
           month={month}
