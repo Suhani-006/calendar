@@ -1,0 +1,348 @@
+body, html, #root, .calendar-app {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+.calendar-app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 320px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s;
+  position: relative;
+  z-index: 2;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  display: none;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  margin-left: 0.5rem;
+}
+.mini-calendar {
+  padding: 1rem;
+}
+.mini-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.mini-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  font-size: 0.9rem;
+}
+.mini-days > div {
+  text-align: center;
+  padding: 0.2rem 0;
+  border-radius: 50%;
+}
+.mini-days .today {
+  background: #1976d2;
+  color: #fff;
+}
+.calendar-types {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.section-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 1rem;
+}
+.main-header .menu-btn {
+  display: none;
+  margin-right: 1rem;
+}
+.today-btn, .nav-btn, .view-btn {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.today-btn {
+  font-weight: bold;
+}
+.nav-btn {
+  width: 2.2rem;
+  padding: 0;
+  font-size: 1.3rem;
+}
+.view-btn {
+  margin-left: auto;
+}
+.month-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 1.5rem;
+  flex: none;
+}
+.today-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.calendar-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  padding: 1rem;
+  position: relative;
+}
+.calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  min-height: 48px;
+}
+.calendar-days {
+  font-weight: bold;
+  color: #444;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0.2rem;
+}
+.calendar-cell {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  min-height: 64px;
+  position: relative;
+  padding: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.calendar-cell.selected {
+  border: 2px solid #1976d2;
+  background: #e3f2fd;
+}
+.calendar-cell.sat {
+  background: #e8f5e9;
+}
+.calendar-cell.sun {
+  background: #ffebee;
+}
+.cell-day {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.cell-events {
+  margin-top: 4px;
+}
+.event-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.calendar-events-bar {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.event-bar {
+  position: absolute;
+  height: 24px;
+  min-width: 120px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  pointer-events: auto;
+  top: 0;
+}
+.event-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.event-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  position: relative;
+}
+.event-modal-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.event-title {
+  margin-left: 0.5rem;
+}
+.event-type {
+  background: #e3f2fd;
+  color: #1976d2;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.event-date {
+  color: #555;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+.event-desc {
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+.close-btn, .close-btn2 {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.close-btn2 {
+  font-size: 1rem;
+  color: #1976d2;
+  border-radius: 6px;
+  padding: 0.4rem 1.2rem;
+  background: #e3f2fd;
+  margin-top: 1rem;
+  float: right;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .calendar-app {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    z-index: 20;
+    transition: left 0.3s;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.08);
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .main-header .menu-btn {
+    display: inline-block;
+  }
+  .sidebar-header .close-btn {
+    display: inline-block;
+  }
+  .sidebar-header .menu-btn {
+    display: none;
+  }
+  .main {
+    width: 100vw;
+  }
+  .calendar-grid {
+    padding: 0.5rem;
+  }
+  .event-modal-content {
+    min-width: 90vw;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 90vw;
+    min-width: 0;
+  }
+  .main-header {
+    padding: 0.5rem;
+  }
+  .month-title {
+    font-size: 1.1rem;
+  }
+  .calendar-row, .calendar-days {
+    font-size: 0.9rem;
+  }
+  .calendar-cell {
+    min-height: 40px;
+    font-size: 0.9rem;
+  }
+  .event-modal-content {
+    min-width: 98vw;
+    padding: 0.5rem;
+  }
+}
