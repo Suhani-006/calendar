@@ -69,12 +69,14 @@ export default function CalendarGrid({ year, month, events, onDayClick }) {
                       fontSize: '0.8em',
                       color: '#1976d2',
                       fontWeight: 'bold',
-                      whiteSpace: 'nowrap',
+                      whiteSpace: 'normal', // Changed from nowrap to normal
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',
                       background: '#e3f2fd',
                       borderRadius: '4px',
-                      padding: '0 2px'
+                      padding: '2px 4px',  // Increased padding
+                      wordBreak: 'break-word', // Added to ensure proper wrapping
+                      lineHeight: '1.2' // Added for better readability
                     }}
                     title={ev.title}
                   >
